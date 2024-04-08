@@ -6,12 +6,13 @@ createApp({
   data() {
     return {
       message: 'API',
-      emails: []
+      emails: [],
+      nEmails: 10
     }
   },
   mounted() {
     console.log('prima di generare', this.emails)
-    this.getRandomEmails(10)
+    this.getRandomEmails(this.nEmails)
     console.log('Dopo il ciclo', this.emails)
   },
   methods: {
