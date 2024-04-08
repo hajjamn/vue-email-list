@@ -14,9 +14,10 @@
     
     <div id="app">
       <h1>Hello, {{ message }}!</h1>
-      <ul>
+      <ul v-if="emails.length === 10">
         <li v-for="email in emails"> {{email}} </li>
       </ul>
+      <p v-else>Sto generando le email</p>
     </div>
 
     <script src="./js/app.js"></script>
