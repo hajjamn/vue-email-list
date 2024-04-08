@@ -7,7 +7,7 @@ createApp({
     return {
       message: 'API',
       emails: [],
-      nEmails: 10
+      nEmails: 100
     }
   },
   mounted() {
