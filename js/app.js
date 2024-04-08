@@ -5,7 +5,7 @@ const { createApp } = Vue
 createApp({
   data() {
     return {
-      message: 'Vue'
+      message: 'API'
     }
   }
 }).mount('#app')
