@@ -14,10 +14,15 @@
     
     <div id="app">
       <h1>Hello, {{ message }}!</h1>
-      <ul v-if="emails.length === 10">
-        <li v-for="email in emails"> {{email}} </li>
-      </ul>
-      <p v-else>Sto generando le email</p>
+      <div class="card w-50 mx-auto my-5 bg-transparent">
+        <ul v-if="emails.length === 10" class="list-group text-center">
+          <li v-for="email in emails" class="list-group-item"> {{email}} </li>
+        </ul>
+        <div v-else class="text-center">
+         <h3 class="text-center">Sto generando le email</h3>
+         <img src="./img/spinner.gif" alt="" class="w-25 my-5">
+        </div>
+      </div>
     </div>
 
     <script src="./js/app.js"></script>
